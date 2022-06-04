@@ -1,0 +1,256 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+<div class="swiper main-swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/images/banner0.jpg"></div>
+        <div class="swiper-slide"><img src="/images/banner1.jpg"></div>
+        <div class="swiper-slide"><img src="/images/banner2.jpg"></div>
+        <div class="swiper-slide"><img src="/images/banner3.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<div class="main-layout main-category">
+    <div class="main-title main-category-title text-center">Danh mục sản phẩm</div>
+    <hr>
+    <div class="main-category-content text-center">
+        <div>
+            <a asp-controller="Category" asp-action="Index">
+                <div class="main-category-content-icon"><i class="fa-solid fa-book"></i></div>
+                <div class="main-category-content-title">Sách tiếng Việt</div>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <div class="main-category-content-icon"><i class="fa-solid fa-book-atlas"></i></div>
+                <div class="main-category-content-title">Sách ngoại ngữ</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="main-layout product-slider">
+    <div class="main-title product-slider-title text-center">Sách bán chạy</div>
+    <hr>
+    <div class="swiper product-slider-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham1.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Thần chết làm thêm 300 yên/giờ
+                </div>
+                <div class="swiper-product-price">105.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham2.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Cây cam ngọt của tôi
+                </div>
+                <div class="swiper-product-price">108.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham3.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Hiệp sĩ xương trên đường du hành đến thế giới khác (Tập 1)
+                </div>
+                <div class="swiper-product-price">126.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham4.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Những đêm không ngủ, những ngày chậm trôi
+                </div>
+                <div class="swiper-product-price">86.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham5.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Tôi là nhện đấy, có sao không? - Tập 5
+                </div>
+                <div class="swiper-product-price">81.750 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham6.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    86 - Eightysix - Ep.5
+                </div>
+                <div class="swiper-product-price">145.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham7.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Hãy khiến tương lai biết ơn vì hiện tại bạn đã cố gắng hết mình
+                </div>
+                <div class="swiper-product-price">99.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham8.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Thế giới Otome Game thật khắc nghiệt với nhân vật quần chúng - Tập 1
+                </div>
+                <div class="swiper-product-price">101.600 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham9.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Một thoáng ta rực rỡ ở nhân gian
+                </div>
+                <div class="swiper-product-price">135.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham10.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Công việc của Long Vương - Tập 1
+                </div>
+                <div class="swiper-product-price">100.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham13.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Hội chứng tuổi thanh xuân - Tập 4
+                </div>
+                <div class="swiper-product-price">105.000 đ</div>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+<div class="main-layout product-slider">
+    <div class="main-title product-slider-title text-center">Sách mới ra mắt</div>
+    <hr>
+    <div class="swiper product-slider-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham1.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Thần chết làm thêm 300 yên/giờ
+                </div>
+                <div class="swiper-product-price">105.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham2.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Cây cam ngọt của tôi
+                </div>
+                <div class="swiper-product-price">108.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham3.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Hiệp sĩ xương trên đường du hành đến thế giới khác (Tập 1)
+                </div>
+                <div class="swiper-product-price">126.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham4.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Những đêm không ngủ, những ngày chậm trôi
+                </div>
+                <div class="swiper-product-price">86.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham5.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Tôi là nhện đấy, có sao không? - Tập 5
+                </div>
+                <div class="swiper-product-price">81.750 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham6.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    86 - Eightysix - Ep.5
+                </div>
+                <div class="swiper-product-price">145.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham7.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Hãy khiến tương lai biết ơn vì hiện tại bạn đã cố gắng hết mình
+                </div>
+                <div class="swiper-product-price">99.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham8.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Thế giới Otome Game thật khắc nghiệt với nhân vật quần chúng - Tập 1
+                </div>
+                <div class="swiper-product-price">101.600 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham9.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Một thoáng ta rực rỡ ở nhân gian
+                </div>
+                <div class="swiper-product-price">135.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham10.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Công việc của Long Vương - Tập 1
+                </div>
+                <div class="swiper-product-price">100.000 đ</div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="/images/sanpham13.jpg">
+                </div>
+                <div class="swiper-product-title">
+                    Hội chứng tuổi thanh xuân - Tập 4
+                </div>
+                <div class="swiper-product-price">105.000 đ</div>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>

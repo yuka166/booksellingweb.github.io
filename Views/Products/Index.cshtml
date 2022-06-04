@@ -1,0 +1,107 @@
+@{
+    ViewData["Title"] = "Sản phẩm";
+}
+
+<div class="page-navigation">
+    <a asp-controller="Home" asp-action="Index">Trang chủ</a> >
+    <a asp-controller="Category" asp-action="Index">Sách tiếng Việt</a> >
+    <a asp-controller="Category" asp-action="Index">Ligh novel</a> >
+    <a asp-controller="Products" asp-action="Index" class="page-navigation-active">Thần chết làm thêm 300 yên/giờ</a>
+</div>
+
+<div class="pd-all">
+    <div class="pd-introduce1">
+        <div class="pd-image-container">
+            <div class="pd-image">
+                <img src="/images/sanpham1.jpg">
+            </div>
+        </div>
+        <div class="pd-details1">
+            <h1 class="pd-title">Thần Chết Làm Thêm 300 Yên/Giờ</h1>
+            <div class="pd-author">Tác giả: Fujimaru</div>
+            @* <div class="pd-rating">
+                Đánh giá:&nbsp;
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                </div> *@
+            <div>Phiên bản: Bản đặc biệt</div>
+            <div class="pd-version">
+                <button type="button">Bản thường</button>
+                <button type="button" class="btn-choose">Bản đặc biệt
+                    <i class="fa-solid fa-check btn-choose-check"></i></button>
+            </div>
+            <div class="pd-price">105.000đ</div>
+            <div class="pd-amount">
+                Số lượng:&nbsp;
+                <button type="button" class="btn btn-light" id="btn-minus">
+                    -
+                </button><input class="amount" type="text" value="1"><button type="button" class="btn btn-light"
+                    id="btn-plus">
+                    +
+                </button>
+            </div>
+            <button type="button" class="pd-cart">Thêm vào giỏ</butt>
+        </div>
+    </div>
+    <div class="pd-introduce2">
+        <div class="pd-title2">Thông tin chi tiết</div>
+        <hr>
+        <div class="pd-details2">
+            <div>
+                <div>Công ty phát hành</div>
+                <div>Tsuki LightNovel</div>
+            </div>
+            <div>
+                <div>Nhà xuất bản</div>
+                <div>Nhà Xuất Bản Thế Giới</div>
+            </div>
+            <div>
+                <div>Năm xuất bản</div>
+                <div>2022</div>
+            </div>
+            <div>
+                <div>Kích thước</div>
+                <div>13x18cm</div>
+            </div>
+            <div>
+                <div>Dịch giả</div>
+                <div>Phạm Thị Phương</div>
+            </div>
+            <div>
+                <div>Loại bìa</div>
+                <div>Bìa mềm</div>
+            </div>
+            <div>
+                <div>Số trang</div>
+                <div>384</div>
+            </div>
+        </div>
+    </div>
+    <div class="pd-introduce2">
+        <div class="pd-title2">Mô tả sản phẩm</div>
+        <hr>
+        <div class="pd-description">“Vậy thì tôi sẽ tuyển cậu làm Thần Chết”
+
+            Một ngày nọ, học sinh cấp 3 Sakura Shinji được cô bạn cùng lớp Hanamori Yuki mời làm công việc “Thần Chết”,
+            công việc giúp những người chết chưa thể siêu thoát, vẫn còn vấn vương với cuộc sống trần gian trút bỏ hết
+            những luyến tiếc và tiễn họ sang thế giới bên kia.<span class="read-more">
+
+                Sakura bán tín bán nghi trước câu chuyện hoang đường này. Tuy nhiên, khi biết rằng “Nếu có thể tiếp tục
+                công việc này trong vòng nửa năm sẽ được thực hiện bất kỳ mong muốn nào.”, dù còn đang nghi ngờ nhưng
+                Sakura vẫn chấp nhận làm công việc này. Ẩn chứa bên trong câu chuyện là sự cảm động về những vấn vương,
+                mong ước rất đỗi xót xa của những người đã mất.
+
+                Trích dẫn sách hay:
+
+                “Mỗi một thần chết sẽ được giao phụ trách ‘người chết’ phù hợp. Như vậy có nghĩa là, những thần chết có
+                những nỗi niềm băn khoăn giống với ‘người chết’ sẽ được giao phụ trách ‘người chết’ đó.”
+
+                “Tôi được sinh ra vì điều gì? Tôi được sinh ra là vì khoảnh khắc này. Chỉ cần có thể nghĩ như vậy, nhất
+                định đó sẽ là điều mong ước của thế giới. Tôi đã ôm chặt hình dáng của hạnh phúc.”</span>
+            <a href="javascript:void(0)" class="read-more-btn">Xem thêm</a>
+        </div>
+    </div>
+</div>

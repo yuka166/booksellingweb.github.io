@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BanSach</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* <link rel="stylesheet" href="~/css/site.css" /> *@
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/lib/fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container margin-container" id="nav-menu">
+            <div class="nav-brand">
+                <a href="/">Bán sách</a>
+            </div>
+            <div class="search-field">
+                <input type="text" placeholder="Tìm sách bạn mong muốn..." class="input-search">
+                <button type="button" class="btn btn-default shadow-none search-btn">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            <div class="cart">
+                <a asp-controller="Cart" asp-action="Index"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
+            </div>
+            <div class="user-action">
+                <a href="#">Đăng nhập/Đăng ký</a>
+            </div>
+            <div class="menu-icon">
+                <a href="javascript:void(0);">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="margin-container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+        <div class="footer-all margin-container">
+            <div class="footer-information">
+                <div class="footer-title">Thông tin liên hệ</div>
+                <div>
+                    <div><i class="fa-solid fa-envelope"></i> nguyenhoangdat16062003@gmail.com</div>
+                    <div><a target=”_blank” href="https://www.facebook.com/izumi326/">
+                            <i class="fa-brands fa-facebook"></i></a></div>
+                </div>
+            </div>
+            <div class="footer-introduce">
+                <div class="footer-title">Giới thiệu</div>
+                <div><a href="/Home/AboutUs">Về chúng tôi</a></div>
+            </div>
+            <div class="footer-help">
+                <div class="footer-title">Hướng dẫn</div>
+                <div>Hướng dẫn mua hàng</div>
+                <div>Phương thức thanh toán</div>
+                <div>Câu hỏi thường gặp</div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">Copyright © 2022 </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="~/js/mainpage.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
